@@ -5,6 +5,7 @@ import { userRoutes } from './routes/users.js';
 import { passportRoutes } from './routes/passports.js';
 import { visaRoutes } from './routes/visas.js';
 import { healthRoutes } from './routes/health.js';
+import { parseAuth } from './middleware/auth.js';
 
 const PORT = parseInt(process.env['PORT'] ?? '3001', 10);
 const HOST = process.env['HOST'] ?? '0.0.0.0';
@@ -24,6 +25,11 @@ async function buildApp() {
     origin: process.env['CORS_ORIGIN'] ?? '*',
   });
   await app.register(helmet);
+
+  // Decorate every request with `user` (null = anonymous).
+  // The parseAuth hook populates it from the Authorization header.
+  app.decorateRequest('user', null);
+  app.addHook('onRequest', parseAuth);
 
   // Routes
   await app.register(healthRoutes, { prefix: '/health' });
