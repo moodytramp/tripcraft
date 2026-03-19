@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
 import helmet from '@fastify/helmet';
@@ -52,6 +53,12 @@ async function start() {
   }
 }
 
-start();
+// Only boot the HTTP server when this file is the process entry point.
+// When imported by test runners (vitest), argv[1] points to vitest's binary,
+// so this guard keeps `process.exit` from being called during tests.
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] === __filename) {
+  start();
+}
 
 export { buildApp };
