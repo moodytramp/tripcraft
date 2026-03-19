@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "TripCraft",
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "retry": "Reintentar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "share": "Compartir",
+    "search": "Buscar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "done": "Hecho"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "signOut": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?"
+  },
+  "profile": {
+    "title": "Perfil",
+    "passports": "Pasaportes",
+    "visas": "Visados",
+    "addPassport": "Añadir pasaporte",
+    "addVisa": "Añadir visado",
+    "departureCountry": "País de salida",
+    "nationality": "Nacionalidad",
+    "visaType": "Tipo de visado",
+    "expiryDate": "Fecha de vencimiento"
+  },
+  "search": {
+    "title": "Encuentra tu viaje",
+    "budget": "Presupuesto",
+    "duration": "Duración",
+    "travelPeriod": "Período de viaje",
+    "travelers": "Viajeros",
+    "adults": "Adultos",
+    "children": "Niños",
+    "findDestinations": "Buscar destinos",
+    "days": "{{count}} días",
+    "noResults": "Ningún destino coincide con tus criterios"
+  },
+  "destinations": {
+    "title": "Destinos",
+    "visaFree": "Sin visa ✓",
+    "visaOnArrival": "Visa a la llegada",
+    "visaHeld": "Visa disponible ✓",
+    "visaRequired": "Visa requerida",
+    "from": "Desde {{price}}",
+    "seeFlights": "Ver vuelos"
+  },
+  "flights": {
+    "title": "Vuelos",
+    "roundTrip": "Ida y vuelta",
+    "stops_zero": "Directo",
+    "stops_one": "{{count}} escala",
+    "stops_other": "{{count}} escalas",
+    "duration": "{{hours}}h {{minutes}}m",
+    "selectFlight": "Seleccionar vuelo"
+  },
+  "hotels": {
+    "title": "Hoteles",
+    "perNight": "{{price}}/noche",
+    "totalPrice": "{{price}} total",
+    "stars": "{{count}} estrellas",
+    "selectHotel": "Seleccionar hotel",
+    "amenities": "Servicios"
+  },
+  "trip": {
+    "title": "Resumen del viaje",
+    "flightCost": "Vuelo",
+    "hotelCost": "Hotel",
+    "taxes": "Impuestos y tasas estimados",
+    "totalCost": "Coste total",
+    "perPerson": "por persona",
+    "underBudget": "{{amount}} por debajo del presupuesto",
+    "overBudget": "{{amount}} por encima del presupuesto",
+    "saveTrip": "Guardar viaje",
+    "shareTrip": "Compartir viaje",
+    "myTrips": "Mis viajes"
+  }
+}

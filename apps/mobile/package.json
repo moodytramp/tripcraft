@@ -1,0 +1,36 @@
+{
+  "name": "@tripcraft/mobile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "build:ios": "eas build --platform ios",
+    "build:android": "eas build --platform android",
+    "lint": "eslint app/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tripcraft/api-client": "workspace:*",
+    "@tripcraft/i18n": "workspace:*",
+    "@tripcraft/types": "workspace:*",
+    "@tripcraft/ui": "workspace:*",
+    "@tanstack/react-query": "^5.75.0",
+    "expo": "~52.0.0",
+    "expo-constants": "~17.1.0",
+    "expo-linking": "~7.1.0",
+    "expo-router": "~4.1.0",
+    "expo-secure-store": "~14.1.0",
+    "expo-status-bar": "~2.1.0",
+    "react": "^19.1.0",
+    "react-native": "0.77.1",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.10.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tripcraft/config": "workspace:*",
+    "@types/react": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}

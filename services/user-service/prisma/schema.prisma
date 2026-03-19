@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String     @id @default(uuid()) @db.Uuid
+  authProviderId    String     @unique @map("auth_provider_id")
+  email             String     @unique
+  displayName       String     @map("display_name") @db.VarChar(100)
+  departureCountry  String?    @map("departure_country") @db.Char(2)
+  preferredLanguage String     @default("en") @map("preferred_language") @db.Char(2)
+  preferredCurrency String     @default("USD") @map("preferred_currency") @db.Char(3)
+  createdAt         DateTime   @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt         DateTime   @updatedAt @map("updated_at") @db.Timestamptz()
+  deletedAt         DateTime?  @map("deleted_at") @db.Timestamptz()
+
+  passports Passport[]
+  visas     Visa[]
+
+  @@map("users")
+}
+
+model Passport {
+  id           String    @id @default(uuid()) @db.Uuid
+  userId       String    @map("user_id") @db.Uuid
+  countryCode  String    @map("country_code") @db.Char(3)
+  expiryDate   DateTime? @map("expiry_date") @db.Date
+  documentS3Key String?  @map("document_s3_key") @db.VarChar(512)
+  isPrimary    Boolean   @default(false) @map("is_primary")
+  createdAt    DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, countryCode])
+  @@index([userId])
+  @@map("passports")
+}
+
+model Visa {
+  id                 String    @id @default(uuid()) @db.Uuid
+  userId             String    @map("user_id") @db.Uuid
+  destinationCountry String    @map("destination_country") @db.Char(2)
+  visaType           String    @map("visa_type") @db.VarChar(50)
+  expiryDate         DateTime? @map("expiry_date") @db.Date
+  documentS3Key      String?   @map("document_s3_key") @db.VarChar(512)
+  createdAt          DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, destinationCountry])
+  @@index([userId])
+  @@map("visas")
+}

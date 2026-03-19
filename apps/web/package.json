@@ -1,0 +1,29 @@
+{
+  "name": "@tripcraft/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tripcraft/api-client": "workspace:*",
+    "@tripcraft/i18n": "workspace:*",
+    "@tripcraft/types": "workspace:*",
+    "@tripcraft/ui": "workspace:*",
+    "@tanstack/react-query": "^5.75.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tripcraft/config": "workspace:*",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}

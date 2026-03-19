@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "TripCraft",
+    "loading": "Wird geladen...",
+    "error": "Etwas ist schiefgelaufen",
+    "retry": "Erneut versuchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "share": "Teilen",
+    "search": "Suchen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "done": "Fertig"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "forgotPassword": "Passwort vergessen?"
+  },
+  "profile": {
+    "title": "Profil",
+    "passports": "Reisepässe",
+    "visas": "Visa",
+    "addPassport": "Reisepass hinzufügen",
+    "addVisa": "Visum hinzufügen",
+    "departureCountry": "Abflugland",
+    "nationality": "Staatsangehörigkeit",
+    "visaType": "Visumstyp",
+    "expiryDate": "Ablaufdatum"
+  },
+  "search": {
+    "title": "Finde deine Reise",
+    "budget": "Budget",
+    "duration": "Dauer",
+    "travelPeriod": "Reisezeitraum",
+    "travelers": "Reisende",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "findDestinations": "Reiseziele finden",
+    "days": "{{count}} Tage",
+    "noResults": "Keine Reiseziele entsprechen deinen Kriterien"
+  },
+  "destinations": {
+    "title": "Reiseziele",
+    "visaFree": "Visumfrei ✓",
+    "visaOnArrival": "Visum bei Ankunft",
+    "visaHeld": "Visum vorhanden ✓",
+    "visaRequired": "Visum erforderlich",
+    "from": "Ab {{price}}",
+    "seeFlights": "Flüge ansehen"
+  },
+  "flights": {
+    "title": "Flüge",
+    "roundTrip": "Hin- und Rückflug",
+    "stops_zero": "Direkt",
+    "stops_one": "{{count}} Zwischenstopp",
+    "stops_other": "{{count}} Zwischenstopps",
+    "duration": "{{hours}}h {{minutes}}m",
+    "selectFlight": "Flug auswählen"
+  },
+  "hotels": {
+    "title": "Hotels",
+    "perNight": "{{price}}/Nacht",
+    "totalPrice": "{{price}} gesamt",
+    "stars": "{{count}} Sterne",
+    "selectHotel": "Hotel auswählen",
+    "amenities": "Ausstattung"
+  },
+  "trip": {
+    "title": "Reiseübersicht",
+    "flightCost": "Flug",
+    "hotelCost": "Hotel",
+    "taxes": "Geschätzte Steuern & Gebühren",
+    "totalCost": "Gesamtkosten",
+    "perPerson": "pro Person",
+    "underBudget": "{{amount}} unter Budget",
+    "overBudget": "{{amount}} über Budget",
+    "saveTrip": "Reise speichern",
+    "shareTrip": "Reise teilen",
+    "myTrips": "Meine Reisen"
+  }
+}

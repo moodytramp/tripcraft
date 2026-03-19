@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "TripCraft",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "retry": "إعادة المحاولة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "share": "مشاركة",
+    "search": "بحث",
+    "back": "رجوع",
+    "next": "التالي",
+    "done": "تم"
+  },
+  "auth": {
+    "signIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "signOut": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "passports": "جوازات السفر",
+    "visas": "التأشيرات",
+    "addPassport": "إضافة جواز سفر",
+    "addVisa": "إضافة تأشيرة",
+    "departureCountry": "بلد المغادرة",
+    "nationality": "الجنسية",
+    "visaType": "نوع التأشيرة",
+    "expiryDate": "تاريخ الانتهاء"
+  },
+  "search": {
+    "title": "ابحث عن رحلتك",
+    "budget": "الميزانية",
+    "duration": "المدة",
+    "travelPeriod": "فترة السفر",
+    "travelers": "المسافرون",
+    "adults": "بالغون",
+    "children": "أطفال",
+    "findDestinations": "البحث عن وجهات",
+    "days": "{{count}} أيام",
+    "noResults": "لا توجد وجهات تطابق معاييرك"
+  },
+  "destinations": {
+    "title": "الوجهات",
+    "visaFree": "بدون تأشيرة ✓",
+    "visaOnArrival": "تأشيرة عند الوصول",
+    "visaHeld": "تأشيرة متاحة ✓",
+    "visaRequired": "تأشيرة مطلوبة",
+    "from": "ابتداءً من {{price}}",
+    "seeFlights": "عرض الرحلات"
+  },
+  "flights": {
+    "title": "الرحلات",
+    "roundTrip": "ذهاب وعودة",
+    "stops_zero": "مباشر",
+    "stops_one": "توقف واحد",
+    "stops_other": "{{count}} توقفات",
+    "duration": "{{hours}} س {{minutes}} د",
+    "selectFlight": "اختيار الرحلة"
+  },
+  "hotels": {
+    "title": "الفنادق",
+    "perNight": "{{price}}/ليلة",
+    "totalPrice": "{{price}} المجموع",
+    "stars": "{{count}} نجوم",
+    "selectHotel": "اختيار الفندق",
+    "amenities": "المرافق"
+  },
+  "trip": {
+    "title": "ملخص الرحلة",
+    "flightCost": "الطيران",
+    "hotelCost": "الفندق",
+    "taxes": "الضرائب والرسوم المقدرة",
+    "totalCost": "التكلفة الإجمالية",
+    "perPerson": "للشخص",
+    "underBudget": "{{amount}} أقل من الميزانية",
+    "overBudget": "{{amount}} فوق الميزانية",
+    "saveTrip": "حفظ الرحلة",
+    "shareTrip": "مشاركة الرحلة",
+    "myTrips": "رحلاتي"
+  }
+}

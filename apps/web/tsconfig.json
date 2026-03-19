@@ -1,0 +1,15 @@
+{
+  "extends": "@tripcraft/config/tsconfig.react.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/*": ["./app/*"],
+      "@tripcraft/ui": ["../../packages/ui/src"],
+      "@tripcraft/types": ["../../packages/types/src"],
+      "@tripcraft/i18n": ["../../packages/i18n/src"],
+      "@tripcraft/api-client": ["../../packages/api-client/src"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

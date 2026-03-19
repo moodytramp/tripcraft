@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "TripCraft",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "share": "Share",
+    "search": "Search",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?"
+  },
+  "profile": {
+    "title": "Profile",
+    "passports": "Passports",
+    "visas": "Visas",
+    "addPassport": "Add Passport",
+    "addVisa": "Add Visa",
+    "departureCountry": "Departure Country",
+    "nationality": "Nationality",
+    "visaType": "Visa Type",
+    "expiryDate": "Expiry Date"
+  },
+  "search": {
+    "title": "Find Your Trip",
+    "budget": "Budget",
+    "duration": "Duration",
+    "travelPeriod": "Travel Period",
+    "travelers": "Travelers",
+    "adults": "Adults",
+    "children": "Children",
+    "findDestinations": "Find Destinations",
+    "days": "{{count}} days",
+    "noResults": "No destinations match your criteria"
+  },
+  "destinations": {
+    "title": "Destinations",
+    "visaFree": "Visa-Free ✓",
+    "visaOnArrival": "Visa on Arrival",
+    "visaHeld": "Visa Held ✓",
+    "visaRequired": "Visa Required",
+    "from": "From {{price}}",
+    "seeFlights": "See Flights"
+  },
+  "flights": {
+    "title": "Flights",
+    "roundTrip": "Round Trip",
+    "stops_zero": "Direct",
+    "stops_one": "{{count}} stop",
+    "stops_other": "{{count}} stops",
+    "duration": "{{hours}}h {{minutes}}m",
+    "selectFlight": "Select Flight"
+  },
+  "hotels": {
+    "title": "Hotels",
+    "perNight": "{{price}}/night",
+    "totalPrice": "{{price}} total",
+    "stars": "{{count}} stars",
+    "selectHotel": "Select Hotel",
+    "amenities": "Amenities"
+  },
+  "trip": {
+    "title": "Trip Summary",
+    "flightCost": "Flight",
+    "hotelCost": "Hotel",
+    "taxes": "Est. Taxes & Fees",
+    "totalCost": "Total Cost",
+    "perPerson": "per person",
+    "underBudget": "{{amount}} under budget",
+    "overBudget": "{{amount}} over budget",
+    "saveTrip": "Save Trip",
+    "shareTrip": "Share Trip",
+    "myTrips": "My Trips"
+  }
+}
