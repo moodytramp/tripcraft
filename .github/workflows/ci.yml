@@ -107,5 +107,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Generate Prisma clients
+        run: pnpm --filter "@tripcraft/user-service" db:generate
+
       - name: Build
         run: pnpm turbo build
