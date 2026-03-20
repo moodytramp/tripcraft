@@ -1,6 +1,7 @@
 {
   "extends": "@tripcraft/config/tsconfig.base.json",
   "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "outDir": "./dist"
   },
   "include": ["src"]

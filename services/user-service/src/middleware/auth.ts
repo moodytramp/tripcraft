@@ -8,7 +8,7 @@ declare module 'fastify' {
   }
 }
 
-const jwksClient = new JwksClient({
+const jwksClient = JwksClient({
   jwksUri: `https://${process.env['AUTH0_DOMAIN']}/.well-known/jwks.json`,
   cache: true,
   cacheMaxAge: 60 * 60 * 1000, // 1 hour
