@@ -16,9 +16,11 @@ model Destination {
   timezone        String?  @db.VarChar(50)
   imageUrl        String?  @map("image_url")
   avgDailyCostUsd Decimal? @map("avg_daily_cost_usd") @db.Decimal(8, 2)
+  avgTemperature  Decimal? @map("avg_temperature") @db.Decimal(4, 1)
   safetyRating    Int?     @map("safety_rating") @db.SmallInt
   isActive        Boolean  @default(true) @map("is_active")
   createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt       DateTime @updatedAt @map("updated_at") @db.Timestamptz()
 
   @@index([region])
   @@map("destinations")

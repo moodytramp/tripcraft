@@ -27,7 +27,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Generate Prisma clients
-        run: pnpm --filter "@tripcraft/user-service" db:generate
+        run: |
+          pnpm --filter "@tripcraft/user-service" db:generate
+          pnpm --filter "@tripcraft/destination-service" db:generate
 
       - name: Lint
         run: pnpm turbo lint
@@ -85,7 +87,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Generate Prisma clients
-        run: pnpm --filter "@tripcraft/user-service" db:generate
+        run: |
+          pnpm --filter "@tripcraft/user-service" db:generate
+          pnpm --filter "@tripcraft/destination-service" db:generate
 
       - name: Run tests
         run: pnpm turbo test
@@ -108,7 +112,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Generate Prisma clients
-        run: pnpm --filter "@tripcraft/user-service" db:generate
+        run: |
+          pnpm --filter "@tripcraft/user-service" db:generate
+          pnpm --filter "@tripcraft/destination-service" db:generate
 
       - name: Build
         run: pnpm turbo build
