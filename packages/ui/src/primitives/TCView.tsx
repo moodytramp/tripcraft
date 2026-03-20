@@ -1,5 +1,5 @@
 import React from 'react';
-import type { TCViewProps } from './types.js';
+import type { TCViewProps } from './types';
 
 export function TCView({ children, style, className, testID, accessibilityRole, accessibilityLabel }: TCViewProps) {
   return (

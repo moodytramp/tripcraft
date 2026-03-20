@@ -9,10 +9,10 @@
  * primitives with platform-specific implementations.
  */
 
-export type { TCViewProps, TCTextProps, TCPressableProps, TCImageProps } from './types.js';
+export type { TCViewProps, TCTextProps, TCPressableProps, TCImageProps } from './types';
 
 // Default web implementations — mobile app overrides these via module resolution
-export { TCView } from './TCView.js';
-export { TCText } from './TCText.js';
-export { TCPressable } from './TCPressable.js';
-export { TCImage } from './TCImage.js';
+export { TCView } from './TCView';
+export { TCText } from './TCText';
+export { TCPressable } from './TCPressable';
+export { TCImage } from './TCImage';

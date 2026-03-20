@@ -1,5 +1,5 @@
 import React from 'react';
-import type { TCPressableProps } from './types.js';
+import type { TCPressableProps } from './types';
 
 export function TCPressable({
   children,

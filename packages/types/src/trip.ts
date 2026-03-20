@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { FlightOfferSchema } from './flight.js';
-import { HotelOfferSchema } from './hotel.js';
+import { FlightOfferSchema } from './flight';
+import { HotelOfferSchema } from './hotel';
 
 export const TripStatusEnum = z.enum(['draft', 'saved', 'shared', 'archived']);
 

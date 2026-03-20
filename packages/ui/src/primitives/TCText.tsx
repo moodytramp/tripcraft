@@ -1,5 +1,5 @@
 import React from 'react';
-import type { TCTextProps } from './types.js';
+import type { TCTextProps } from './types';
 
 export function TCText({ children, style, className, testID, numberOfLines, accessibilityRole }: TCTextProps) {
   const clampStyle: React.CSSProperties = numberOfLines

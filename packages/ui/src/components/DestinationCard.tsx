@@ -1,5 +1,5 @@
 import React from 'react';
-import { TCView, TCText, TCPressable, TCImage } from '../primitives/index.js';
+import { TCView, TCText, TCPressable, TCImage } from '../primitives/index';
 import type { EligibleDestination } from '@tripcraft/types';
 
 interface DestinationCardProps {
