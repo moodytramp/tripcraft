@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState, useTransition, useCallback } from 'react';
+import React, { useState, useTransition, useCallback, useEffect } from 'react';
+import Link from 'next/link';
 import { DestinationCard } from '@tripcraft/ui';
 import type { EligibleDestination } from '@tripcraft/types';
 import { searchDestinations } from './actions';
+import { loadProfile } from '../profile/store';
 import {
   PASSPORT_COUNTRIES,
   DESTINATION_COUNTRIES,
@@ -254,6 +256,27 @@ export function SearchClient() {
   const [visas, setVisas] = useState<VisaEntry[]>([]);
   const [nextVisaId, setNextVisaId] = useState(1);
 
+  // Pre-fill from saved profile on mount
+  useEffect(() => {
+    const profile = loadProfile();
+    if (profile.passports.length > 0) {
+      setPassports(profile.passports.map((p) => p.countryCode));
+    }
+    if (profile.visas.length > 0) {
+      setVisas(
+        profile.visas
+          .filter((v) => v.expiryDate && new Date(v.expiryDate) > new Date())
+          .map((v, i) => ({
+            id: i + 1,
+            destinationCountry: v.destinationCountry,
+            expiresAt: v.expiryDate ?? '',
+            visaType: v.visaType,
+          })),
+      );
+      setNextVisaId(profile.visas.length + 1);
+    }
+  }, []);
+
   // Filter state
   const [budgetUsd, setBudgetUsd] = useState('');
   const [region, setRegion] = useState('');
@@ -336,6 +359,18 @@ export function SearchClient() {
         <p style={css.heroSub}>
           Enter your passport & visas — see every destination you can reach today
         </p>
+        <Link
+          href="/profile"
+          style={{
+            display: 'inline-block',
+            marginTop: 14,
+            fontSize: 13,
+            color: 'rgba(255,255,255,0.8)',
+            textDecoration: 'underline',
+          }}
+        >
+          Save your profile →
+        </Link>
       </div>
 
       <div style={css.container}>
